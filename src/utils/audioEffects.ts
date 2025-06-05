@@ -485,7 +485,7 @@ class AudioEffects {
 }
 
 // 전역 인스턴스 생성
-export const audioEffects = new AudioEffects();
+let audioEffectsInstance: AudioEffects | null = null;
 
 // 사용자 첫 인터랙션 시 오디오 컨텍스트 활성화
 export const initializeAudio = () => {
